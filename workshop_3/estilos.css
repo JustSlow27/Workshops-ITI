@@ -1,0 +1,155 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    padding: 0 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container:after,
+.container:before {
+    display: table;
+    content: " ";
+}
+
+.container:after {
+    clear: both;
+}
+
+
+.header {
+    background-color: #bf0101;
+    color: #ffffff;
+    padding: 1em 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1;
+    margin: 0;
+}
+
+
+.showcase {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+}
+
+.showcase h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.showcase p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.button {
+    background-color: #214fa0;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: hsl(212, 72%, 22%);
+}
+.red-logo {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    max-width: 300px; 
+    height: auto; 
+    z-index: 999; 
+}
+
+.features {
+    padding: 2em 0;
+}
+
+.features h3 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features li {
+    padding: 0.5em 0;
+}
+
+.features strong {
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+
+
+.gallery {
+    padding: 2em 0;
+}
+
+.gallery h3 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.gallery-item {
+    width: 33.333%;
+    float: left;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
