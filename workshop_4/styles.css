@@ -89,11 +89,10 @@ body {
     height: auto;
     z-index: 999;
 }
-
+/*se agrupan las reglas para los elementos de la clase .features:*/
 .features {
     padding: 2em 0;
 }
-
 .features > h3 {
     font-size: 2em;
     margin-bottom: 1em;
@@ -114,15 +113,13 @@ body {
     margin-right: 0.5em;
 }
 
-.gallery {
-    padding: 2em 0;
-}
-
+/* Define el tamaño del texto del encabezado dentro de la galería y agrega margen inferior para separación */
 .gallery > h3 {
     font-size: 2em;
     margin-bottom: 1em;
 }
 
+/* Establece el ancho de cada elemento de la galería en un tercio del contenedor, flotando los elementos a la izquierda y aplicando un relleno y un modelo de caja adecuado */
 .gallery-item {
     width: 33.333%;
     float: left;
@@ -130,23 +127,26 @@ body {
     box-sizing: border-box;
 }
 
+/* Ajusta el tamaño de las imágenes dentro de los elementos de la galería para que ocupen todo el ancho disponible */
 .gallery-item > img {
     width: 100%;
     height: auto;
 }
 
+/* Establece el color de fondo de los elementos de la galería y agrega un relleno para separación */
 @media (max-width: 768px) {
     .gallery-item {
         width: 50%;
     }
 }
-
+/* Ajusta el ancho de los elementos de la galería para que ocupen todo el ancho disponible en pantallas más pequeñas */
 @media (max-width: 480px) {
     .gallery-item {
         width: 100%;
     }
 }
-
+/* Establece el color de fondo de los elementos de la galería y agrega un relleno para separación */
+/*Este pseudo elemento agrega contenido y color de fondo*/
 .container:before {
     background-color: #ccc;
 }
