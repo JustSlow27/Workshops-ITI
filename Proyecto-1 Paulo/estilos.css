@@ -1,0 +1,146 @@
+.header-container {
+  border: 2px solid #32c3f1;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-container h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-container input[type="text"],
+.search-container button {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.results-container {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.view-btn {
+  padding: 5px 10px;
+  background-color: #32c3f1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: auto; /* Establece el ancho automáticamente */
+  max-width: 80%; /* Limita el ancho máximo a un porcentaje del contenedor principal */
+  overflow: auto;
+  padding-right: 40px; /* Agrega espacio para el botón de cerrar */
+}
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fade-in, .fade-out {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.login {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.logo {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 200px; /* Ajusta el tamaño según lo necesites */
+  height: auto; /* Esto asegura que la imagen mantenga su relación de aspecto */
+  z-index: 1000; /* Asegura que el logo esté por encima de otros elementos */
+}
+
+/* Media query para ajustar el logo en resoluciones más pequeñas */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 150px; /* Reducir el tamaño del logo para resoluciones más pequeñas */
+    top: 20px;
+    right: 20px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 120px; /* Reducir aún más el tamaño del logo para resoluciones muy pequeñas */
+    top: 10px;
+    right: 10px;
+  }
+}
