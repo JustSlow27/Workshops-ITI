@@ -1,156 +1,125 @@
-* {
-    box-sizing: border-box;
+:root {
+    --background-color: #ffffff;
+    --text-color: #333;
+    --container-background-color: #f5f5f5;
+    --border-color: #ccc;
+    --button-background-color: #007bff;
+    --button-hover-background-color: #0056b3;
+}
+
+[data-theme="dark"] {
+    --background-color: #333;
+    --text-color: #f5f5f5;
+    --container-background-color: #444;
+    --border-color: #666;
+    --button-background-color: #5588ff;
+    --button-hover-background-color: #4467d9;
+}
+
+body, .client-registration-container, input[type="text"], input[type="tel"], button {
+    transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
 }
 
 body {
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    padding: 0 20px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.container:after,
-.container:before {
-    display: table;
-    content: " ";
-}
-
-.container:after {
-    clear: both;
-}
-
-.header {
-    background-color: #bf0101;
-    color: #ffffff;
-    padding: 1em 0;
-}
-
-.header > .container {
+    font-family: Arial, sans-serif;
     display: flex;
-    justify-content: space-between;
-}
-
-.header > .logo {
-    font-weight: bold;
-    font-size: 1.5em;
-    line-height: 1;
-    margin: 0;
-}
-
-.showcase {
-    background-image: url("background.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    color: #000000;
-}
-
-.showcase > h2 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-}
-
-.showcase > p {
-    font-size: 1.2em;
-    margin-bottom: 1em;
-}
-
-.button {
-    background-color: #214fa0;
-    color: #fff;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.button:hover {
-    background-color: hsl(212, 72%, 22%);
-}
-
-.red-logo {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    max-width: 300px;
-    height: auto;
-    z-index: 999;
-}
-/*se agrupan las reglas para los elementos de la clase .features:*/
-.features {
-    padding: 2em 0;
-}
-.features > h3 {
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-.features > ul {
-    list-style: none;
-    padding: 0;
+    align-items: center;
+    height: 100vh;
     margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-.features > ul > li {
-    padding: 0.5em 0;
-}
-
-.features strong {
-    font-weight: bold;
-    margin-right: 0.5em;
-}
-
-/* Define el tamaño del texto del encabezado dentro de la galería y agrega margen inferior para separación */
-.gallery > h3 {
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-/* Establece el ancho de cada elemento de la galería en un tercio del contenedor, flotando los elementos a la izquierda y aplicando un relleno y un modelo de caja adecuado */
-.gallery-item {
-    width: 33.333%;
-    float: left;
-    padding: 0.5em;
+.client-registration-container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     box-sizing: border-box;
+    background-color: var(--container-background-color);
 }
 
-/* Ajusta el tamaño de las imágenes dentro de los elementos de la galería para que ocupen todo el ancho disponible */
-.gallery-item > img {
+input[type="text"], input[type="tel"] {
     width: 100%;
-    height: auto;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-/* Establece el color de fondo de los elementos de la galería y agrega un relleno para separación */
-@media (max-width: 768px) {
-    .gallery-item {
-        width: 50%;
-    }
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-background-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-/* Ajusta el ancho de los elementos de la galería para que ocupen todo el ancho disponible en pantallas más pequeñas */
-@media (max-width: 480px) {
-    .gallery-item {
-        width: 100%;
-    }
+
+button:hover {
+    background-color: var(--button-hover-background-color);
 }
-/* Establece el color de fondo de los elementos de la galería y agrega un relleno para separación */
-/*Este pseudo elemento agrega contenido y color de fondo*/
-.container:before {
+
+.client-registration-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dark-mode-toggle {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 48px;
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-slider {
     background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 24px;
 }
 
+.toggle-slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 16px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 16px;
+    border-radius: 50%;
+}
 
+input:checked + .toggle-slider {
+    background-color: #66bb6a;
+}
 
+input:checked + .toggle-slider:before {
+    transform: translateX(24px);
+}
 
+.toggle-slider.round {
+    border-radius: 34px;
+}
+
+.toggle-slider.round:before {
+    border-radius: 50%;
+}

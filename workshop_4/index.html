@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="client-registration-container">
+    <div class="client-registration-header">
+        <h2 style="margin: 0;">Registro de Clientes</h2>
+        <label class="dark-mode-toggle" for="checkbox">
+            <input type="checkbox" id="checkbox">
+            <div class="toggle-slider round"></div>
+        </label>
+        <em>Modo Nocturno</em>
+    </div>
+    <input type="text" id="firstName" placeholder="Nombre" required>
+    <input type="text" id="lastName" placeholder="Apellido" required>
+    <input type="tel" id="phone" placeholder="Número de Teléfono" required>
+    <button id="saveClient">Guardar</button> 
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
