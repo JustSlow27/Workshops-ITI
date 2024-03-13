@@ -6,7 +6,6 @@
     --button-background-color: #007bff;
     --button-hover-background-color: #0056b3;
 }
-
 [data-theme="dark"] {
     --background-color: #333;
     --text-color: #f5f5f5;
@@ -15,11 +14,9 @@
     --button-background-color: #5588ff;
     --button-hover-background-color: #4467d9;
 }
-
 body, .client-registration-container, input[type="text"], input[type="tel"], button {
     transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
 }
-
 body {
     font-family: Arial, sans-serif;
     display: flex;

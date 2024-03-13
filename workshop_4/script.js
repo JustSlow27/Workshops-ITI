@@ -2,16 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkbox = document.getElementById('checkbox');
     checkbox.checked = localStorage.getItem('darkMode') === 'true';
     document.documentElement.setAttribute('data-theme', checkbox.checked ? 'dark' : 'light');
-
     checkbox.addEventListener('change', function() {
         document.documentElement.setAttribute('data-theme', this.checked ? 'dark' : 'light');
         localStorage.setItem('darkMode', this.checked.toString());
     });
-
     const saveClientButton = document.getElementById('saveClient'); 
     saveClientButton.addEventListener('click', saveClient);
 });
-
 function saveClient() {
     const firstName = document.getElementById('firstName').value; 
     const lastName = document.getElementById('lastName').value; 
