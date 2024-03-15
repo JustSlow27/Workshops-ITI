@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <div class="client-registration-container">
     <div class="client-registration-header">
         <h2 style="margin: 0;">Registro de Clientes</h2>
@@ -22,8 +21,17 @@
     <input type="tel" id="phone" placeholder="Número de Teléfono" required>
     <button id="saveClient">Guardar</button> 
 </div>
-
+<table class="u-full-width">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Número de Teléfono</th>
+        </tr>
+    </thead>
+    <tbody id="userDataTable">
+    </tbody>
+</table>
 <script src="script.js"></script>
-
 </body>
 </html>

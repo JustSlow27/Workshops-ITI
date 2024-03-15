@@ -14,18 +14,20 @@
     --button-background-color: #5588ff;
     --button-hover-background-color: #4467d9;
 }
-body, .client-registration-container, input[type="text"], input[type="tel"], button {
+body, .client-registration-container, input[type="text"], input[type="tel"], button, table, th, td {
     transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
 }
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column; /* Cambiado a columna para apilar verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    min-height: 100vh; /* Usa min-height en lugar de height para permitir expansión */
     margin: 0;
     background-color: var(--background-color);
     color: var(--text-color);
+    padding-top: 20px; /* Añade un poco de espacio en la parte superior */
 }
 
 .client-registration-container {
@@ -120,3 +122,93 @@ input:checked + .toggle-slider:before {
 .toggle-slider.round:before {
     border-radius: 50%;
 }
+table {
+    width: 90%;
+    max-width: 800px; /* Ajusta según sea necesario */
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--container-background-color);
+    color: var(--text-color);
+}
+
+td {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+
+/* Hover sobre filas */
+tr:hover:not(:first-child) {
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* Estilo para hacer la tabla responsive */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        display: block;
+        text-align: right;
+    }
+
+    td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, tr {
+        display: block;
+        width: 100%;
+    }
+
+    th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid var(--border-color); margin-bottom: 10px; }
+
+    td {
+        border: none;
+        border-bottom: 1px solid var(--border-color); /* Solo para separar los td si quieres */
+        position: relative;
+        padding-left: 50%; /* Ajusta según el contenido */
+        text-align: left;
+        display: flex;
+        align-items: center; /* Centra verticalmente el texto y la etiqueta */
+        justify-content: space-between; /* Separa la etiqueta y el contenido */
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        width: 45%; /* Ajusta según el contenido */
+        text-align: left;
+    }
+}
+

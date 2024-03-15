@@ -1,19 +1,21 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trip Details</title>
-  <!-- Skeleton CSS -->
+  <title>TicoRides.com</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-  <!-- Tus estilos personalizados -->
+
   <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
   <button id="loginButton">Login</button>
-	<div id="welcomeMessage" style="display:none;"></div>
+  <div id="welcomeMessage" style="display:none;"></div>
   <header>
     <div class="container">
-      <h1>TicoRides</h1>
+      <h1>Welcome to TicoRides.com</h1>
     </div>
     <img src="logo.png" alt="Logo" class="logo">
   </header>
@@ -27,7 +29,6 @@
         </div>
       </div>
     </div>
-
     <div class="results-container">
       <h2>Results for Rides that match your criteria:</h2>
       <table class="u-full-width">
@@ -46,7 +47,7 @@
             <td>Ciudad Quesada</td>
             <td><button class="button view-btn" data-user="Paulo">View</button></td>
 
-        
+
           <tr>
             <td>Randola</td>
             <td>Naranjo</td>
@@ -57,13 +58,13 @@
             <td>Andrew</td>
             <td>Santa Ana</td>
             <td>San Pedro</td>
-            <td><button class="view-btn" data-user="Andrew">View</button></td>         
+            <td><button class="view-btn" data-user="Andrew">View</button></td>
           </tr>
           <tr>
             <td>Fabiola</td>
             <td>Liberia</td>
             <td>Puntarenas</td>
-            <td><button class="view-btn" data-user="Fabiola">View</button></td>         
+            <td><button class="view-btn" data-user="Fabiola">View</button></td>
           </tr>
           <tr>
             <td>Jason</td>
@@ -80,15 +81,16 @@
         </tbody>
       </table>
     </div>
+    </div>
+  </main>
+  <div id="popup-container" class="popup-container">
+    <div class="popup">
+      <span class="close">&times;</span>
+      <div id="popup-content"></div>
+    </div>
   </div>
-</main>
-<div id="popup-container" class="popup-container">
-  <div class="popup">
-    <span class="close">&times;</span>
-    <div id="popup-content"></div>
-  </div>
-</div>
-<img src="logo.png" alt="Logo" class="logo">
-<script src="assets.js"></script>
+  <img src="logo.png" alt="Logo" class="logo">
+  <script src="assets.js"></script>
 </body>
+
 </html>

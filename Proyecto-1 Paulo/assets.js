@@ -65,7 +65,7 @@ searchButton.addEventListener('click', function() {
     }
   });
 
-  ridesTable.style.display = 'table';
+ 
 });
 
 viewBtns.forEach(button => {
@@ -73,11 +73,11 @@ viewBtns.forEach(button => {
     const user = button.getAttribute('data-user');
     if (tripDetails.hasOwnProperty(user)) {
       const userTripDetails = tripDetails[user];
-      popupContainer.classList.remove("fade-out"); // Ensure fade-out class is removed
+      popupContainer.classList.remove("fade-out"); 
       popupContainer.style.display = "flex";
       setTimeout(() => {
         popupContainer.classList.add("fade-in");
-      }, 50); // Adding a small delay before applying fade-in for smoother transition
+      }, 50); 
       displayPopupContent(userTripDetails);
     } else {
       console.log("User not found in trip details");
@@ -97,7 +97,7 @@ closeBtn.addEventListener("click", () => {
   setTimeout(() => {
     popupContainer.style.display = "none";
     popupContainer.classList.remove("fade-out");
-  }, 300); // 300 milliseconds, duration of the fade-out transition
+  }, 300); 
 });
 
 function displayPopupContent(details) {
