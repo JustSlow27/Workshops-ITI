@@ -3,11 +3,19 @@
   padding: 10px;
   text-align: center;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-container h1 {
   margin: 0;
   padding: 0;
+  flex-grow: 1; /* Agregado para centrar el título */
+}
+
+.login-container {
+  margin-left: 10px; /* Espacio entre el título y el botón */
 }
 
 body {
@@ -112,7 +120,7 @@ th {
 .login {
   width: 100%;
   margin-top: 20px;
-  text-align: center;
+  text-align: right;
   background-color: #ddd;
   padding: 10px;
   border-radius: 5px;
@@ -120,7 +128,7 @@ th {
 
 .logo {
   position: fixed;
-  top: 30px;
+  top: 500px;
   right: 30px;
   width: 200px; 
   height: auto; 
@@ -143,3 +151,5 @@ th {
     right: 10px;
   }
 }
+
+
