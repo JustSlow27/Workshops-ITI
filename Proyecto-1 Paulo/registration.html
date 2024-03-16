@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <style>
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .registration-logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .registration-logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        .registration-form input[type="text"],
+        .registration-form input[type="password"] {
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="registration-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <form class="registration-form">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Input text">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Input text">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="(xxx) xxx-xxxx">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Input text">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Input text">
+            <label for="repeatPassword">Repeat Password</label>
+            <input type="password" id="repeatPassword" placeholder="Input text">
+            <button type="button" id="register-btn">Register</button>
+            <p>Already an user? <a href="login.html">Login Here</a></p>
+        </form>
+    </div>
+    <script>
+        document.getElementById('register-btn').addEventListener('click', function() {
+            // Implement user registration logic here
+            window.location.href = 'TicoRides.html';
+        });
+    </script>
+</body>
+</html>
