@@ -22,7 +22,11 @@
         }
         .login-form input[type="text"],
         .login-form input[type="password"],
-      
+        #login-btn {
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
@@ -43,7 +47,7 @@
         document.getElementById('login-btn').addEventListener('click', function() {
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
-            window.location.href = 'TicoRides.html';
+            window.location.href = 'dashboard.html';
         });
     </script>
 </body>

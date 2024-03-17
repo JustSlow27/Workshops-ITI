@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <style>
+    .navbar {
+      background-color: #eee;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .navbar a {
+      display: inline-block;
+      padding: 5px 10px;
+      color: #333;
+      text-decoration: none;
+    }
+    .breadcrumb {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    @media (max-width: 550px) {
+      .navbar a {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <img src="logo.png" alt="Logo">
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <div class="navbar">
+          <a href="#">Dashboard</a>
+          <a href="TicoRides.html">Rides</a>
+          <a href="#">Settings</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <h4>Dashboard</h4>
+        <div class="breadcrumb">Dashboard &gt;</div>
+        <h5>My Rides</h5>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Start</th>
+              <th>End</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Brete</td>
+              <td>Barrio Los Angeles</td>
+              <td>Ciudad Quesada</td>
+              <td>Edit - Delete</td>
+            </tr>
+            <tr>
+              <td>Casa</td>
+              <td>Ciudad Quesada</td>
+              <td>Los Angeles</td>
+              <td>Edit - Delete</td>
+            </tr>
+            <tr>
+              <td>Oficina Chepe</td>
+              <td>Ciudad Quesada</td>
+              <td>San Pedro</td>
+              <td>Edit - Delete</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
