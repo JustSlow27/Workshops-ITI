@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Ride</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="breadcrumb">
+            <a href="dashboard.html">Dashboard</a> > <a href="TicoRides.html">Rides</a> > <span>View</span>
+        </div>
+        <div class="form-container">
+            <div class="row">
+                <div class="six columns">
+                    <label for="ride-name">Ride Driver</label>
+                    <input type="text" id="ride-name" placeholder="Randola" readonly class="u-full-width">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="start-from">Start From</label>
+                    <input type="text" id="start-from" placeholder="Naranjo" readonly class="u-full-width">
+                </div>
+                <div class="six columns">
+                    <label for="end">End</label>
+                    <input type="text" id="end" placeholder="Fortuna" readonly class="u-full-width">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <label for="description">Description</label>
+                    <textarea id="description" class="large-textarea u-full-width" rows="5" placeholder="Ride express, tiene un valor de 7000 colones por persona, se acepta equipaje" readonly></textarea>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <h4>When</h4>
+            <div class="row">
+                <div class="six columns">
+                    <label for="departure">Departure</label>
+                    <input type="text" id="departure" placeholder="8:00 AM" readonly class="u-full-width">
+                    <label for="estimated-arrival">Estimated Arrival</label>
+                    <input type="text" id="estimated-arrival" placeholder="10:05 AM" readonly class="u-full-width">
+                </div>
+                <div class="six columns">
+                    <label>
+                        <input type="checkbox" disabled> Monday
+                    </label>
+                    <label>
+                        <input type="checkbox" disabled> Tuesday
+                    </label>
+                    <label>
+                        <input type="checkbox" disabled> Wednesday
+                    </label>
+                    <label>
+                        <input type="checkbox" disabled> Thursday
+                    </label>
+                    <label>
+                        <input type="checkbox" disabled> Friday
+                    </label>
+                    <label>
+                        <input type="checkbox" checked disabled> Saturday
+                    </label>
+                    <label>
+                        <input type="checkbox" disabled> Sunday
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <button class="button-primary"><a href="TicoRides.html">back</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var checkboxes = document.querySelectorAll('.checkbox-group input[type="checkbox"]');
+            checkboxes.forEach(function(checkbox) {
+                checkbox.addEventListener('click', function(event) {
+                    event.preventDefault();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

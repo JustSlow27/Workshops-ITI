@@ -122,15 +122,16 @@ body {
   .form-group input,
   .form-group textarea {
     width: 100%;
+    
     box-sizing: border-box;
   }
   .form-group textarea {
-height: 100px; 
+height: 50px; 
 }
 .btn {
 display: inline-block;
-padding: 10px 15px;
-font-size: 18px;
+padding: 08px 08px;
+font-size: 13px;
 cursor: pointer;
 text-align: center;
 text-decoration: none;
@@ -138,8 +139,8 @@ outline: none;
 color: #fff;
 background-color: #33c3f0;
 border: none;
-border-radius: 4px;
-box-shadow: 0 9px #999;
+border-radius: 7px;
+
 }
 .btn:hover { background-color: #33a6f0 }
 .btn:active {
@@ -147,8 +148,11 @@ background-color: #33a6f0;
 box-shadow: 0 5px #666;
 transform: translateY(4px);
 }
-.btn.cancel { background-color: #ff4136; }
+.btn.cancel { background-color: #ff4136;
+
+} 
 
 @media (max-width: 550px) {
 .navbar li { padding: 10px; }
 }
+

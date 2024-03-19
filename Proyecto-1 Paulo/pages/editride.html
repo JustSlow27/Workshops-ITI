@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Ride</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="rydestyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="breadcrumb">
+            <a href="dashboard.html">Dashboard</a> > <a href="TicoRides.html">Rides</a> > <span>Edit</span>
+        </div>
+        <div class="form-container">
+            <div class="row">
+                <div class="six columns">
+                    <label for="ride-name">Ride Name</label>
+                    <input type="text" id="ride-name" placeholder="Brete" class="u-full-width">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="start-from">Start From</label>
+                    <input type="text" id="start-from" placeholder="Barrio Los Angeles, Ciudad Quesada" class="u-full-width">
+                </div>
+                <div class="six columns">
+                    <label for="end">End</label>
+                    <input type="text" id="end" placeholder="Mercado Municipal, Ciudad Quesada" class="u-full-width">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="3" placeholder="This is my everyday ride, from Barrio Los Angels to my job's office in Second Floor of Cooperservidores Building" class="u-full-width"></textarea>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <h4>When</h4>
+            <div class="row">
+                <div class="six columns">
+                    <label for="departure">Departure</label>
+                    <input type="text" id="departure" placeholder="6:45 AM" class="u-full-width">
+                </div>
+                <div class="six columns">
+                    <label for="estimated-arrival">Estimated Arrival</label>
+                    <input type="text" id="estimated-arrival" placeholder="7:05 AM" class="u-full-width">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <label>
+                        <input type="checkbox" checked> Monday
+                    </label>
+                    <label>
+                        <input type="checkbox" checked> Tuesday
+                    </label>
+                    <label>
+                        <input type="checkbox" checked> Wednesday
+                    </label>
+                    <label>
+                        <input type="checkbox" checked> Thursday
+                    </label>
+                    <label>
+                        <input type="checkbox" checked> Friday
+                    </label>
+                    <label>
+                        <input type="checkbox"> Saturday
+                    </label>
+                    <label>
+                        <input type="checkbox"> Sunday
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <button class="button">Cancel</button>
+                </div>
+                <div class="six columns">
+                    <button class="button-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

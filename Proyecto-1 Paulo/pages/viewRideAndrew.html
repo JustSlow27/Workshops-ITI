@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Ride</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="breadcrumb">
+            <a href="dashboard.html">Dashboard</a> > <a href="TicoRides.html">Rides</a> > <span>View</span>
+        </div>
+        <div class="form-container">
+            <div class="row">
+                <div class="six columns">
+                    <label for="ride-name">Ride Driver</label>
+                    <input type="text" id="ride-name" placeholder="Andrew" readonly class="u-full-width">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="start-from">Start From</label>
+                    <input type="text" id="start-from" placeholder="Santa Ana" readonly class="u-full-width">
+                </div>
+                <div class="six columns">
+                    <label for="end">End</label>
+                    <input type="text" id="end" placeholder="San Pedro" readonly class="u-full-width">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <label for="description">Description</label>
+                    <textarea id="description" class="large-textarea u-full-width" placeholder="Viaje corto, en menos de 20 minutos llegarás, servicio de lujo. Costo 5000 colones" readonly></textarea>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <h4>When</h4>
+            <div class="row">
+                <div class="six columns">
+                    <label for="departure">Departure</label>
+                    <input type="text" id="departure" placeholder="6:40 AM" readonly class="u-full-width">
+                </div>
+                <div class="six columns">
+                    <label for="estimated-arrival">Estimated Arrival</label>
+                    <input type="text" id="estimated-arrival" placeholder="7:00 AM" readonly class="u-full-width">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <label>
+                        <input type="checkbox" checked disabled> Monday
+                    </label>
+                    <label>
+                        <input type="checkbox" checked disabled> Tuesday
+                    </label>
+                    <label>
+                        <input type="checkbox" checked disabled> Wednesday
+                    </label>
+                    <label>
+                        <input type="checkbox" checked disabled> Thursday
+                    </label>
+                    <label>
+                        <input type="checkbox" checked disabled> Friday
+                    </label>
+                    <label>
+                        <input type="checkbox" disabled> Saturday
+                    </label>
+                    <label>
+                        <input type="checkbox" disabled> Sunday
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <button class="button-primary"><a href="TicoRides.html">back</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var checkboxes = document.querySelectorAll('.checkbox-group input[type="checkbox"]');
+            checkboxes.forEach(function(checkbox) {
+                checkbox.addEventListener('click', function(event) {
+                    event.preventDefault();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
