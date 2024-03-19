@@ -3,35 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trip Details</title>
-    <!-- Skeleton CSS -->
+    <title>Main Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-    <!-- Estilos personalizados -->
-    <style>
-        .logo {
-            display: block;
-            margin: 0 auto;
-            max-width: 300px;
-        }
-
-      
-
-        h1 {
-            font-size: px;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="login-container">
-        <button id="loginButton">Login</button>
-    </div>
+
     <img src="logo.png" alt="Logo" class="logo">
+    <div class="login-container">
+        <button class="login-btn">Login</button>
+    </div>
+    
     <h1>Welcome to TicoRides.com</h1>
 
     <main class="container">
-        <div class="row">
+        <div class="row justify -content-center align-items-center">
             <div class="six columns">
                 <div class="search-container">
                     <input type="text" placeholder="From" id="fromInput" class="u-full-width">
@@ -42,6 +28,7 @@
         </div>
         <div class="results-container">
             <h2>Results for Rides that match your criteria:</h2>
+        
             <table class="u-full-width">
                 <thead>
                     <tr>
@@ -56,13 +43,13 @@
                         <td>Paulo</td>
                         <td>San José</td>
                         <td>Ciudad Quesada</td>
-                        <td><button class="button view-btn" data-user="Paulo">View</button></td>
+                        <td><button class="button view-btn" data-user="Paulo"><a href="viewridePaulo.html">View</a></button></td>
                     </tr>
                     <tr>
                         <td>Randola</td>
                         <td>Naranjo</td>
                         <td>Fortuna</td>
-                        <td><button class="view-btn" data-user="Randola">View</button></td>
+                        <td><button class="view-btn" data-user="Randola"><a href="viewRideRandola.html">View</a></button></td>
                     </tr>
                     <tr>
                         <td>Andrew</td>
@@ -71,39 +58,18 @@
                         <td><button class="view-btn" data-user="Andrew">View</button></td>
                     </tr>
                     <tr>
-                        <td>Fabiola</td>
-                        <td>Liberia</td>
-                        <td>Puntarenas</td>
-                        <td><button class="view-btn" data-user="Fabiola">View</button></td>
-                    </tr>
-                    <tr>
-                        <td>Jason</td>
-                        <td>Heredia</td>
-                        <td>Guápiles</td>
-                        <td><button class="view-btn" data-user="Jason">View</button></td>
-                    </tr>
-                    <tr>
-                        <td>Sebastian</td>
-                        <td>Ciudad Quesada</td>
-                        <td>San José</td>
-                        <td><button class="view-btn" data-user="Sebastian">View</button></td>
-                    </tr>
+
                 </tbody>
             </table>
         </div>
     </main>
-
-    <div id="popup-container" class="popup-container">
-        <div class="popup">
-            <span class="close">&times;</span>
-            <div id="popup-content"></div>
-        </div>
-    </div>
     <script>
-      document.getElementById('loginButton').addEventListener('click', function() {
-          window.location.href = 'login.html';
-      });
+      //al pulsar el botón login se redirige a la página de login
+        document.querySelector('.login-btn').addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+;
+
   </script>
-    <script src="assets.js"></script>
 </body>
 </html>

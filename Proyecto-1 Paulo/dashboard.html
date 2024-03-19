@@ -5,40 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-  <style>
-    .navbar {
-      background-color: #eee;
-      border-radius: 5px;
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-    .navbar a {
-      display: inline-block;
-      padding: 5px 10px;
-      color: #333;
-      text-decoration: none;
-    }
-    .breadcrumb {
-      font-size: 14px;
-      color: #777;
-      margin-bottom: 20px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 10px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-    @media (max-width: 550px) {
-      .navbar a {
-        display: block;
-        margin-bottom: 5px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="dashboardstyle.css"> 
 </head>
 <body>
   <div class="container">
@@ -49,11 +16,20 @@
     </div>
     <div class="row">
       <div class="twelve columns">
-        <div class="navbar">
-          <a href="#">Dashboard</a>
-          <a href="TicoRides.html">Rides</a>
-          <a href="#">Settings</a>
+
+        <div class="navcontainer">
+          <div class="tabs">
+            <input type="radio" id="radio-1" name="tabs" checked/>
+            <label for="radio-1" class="tab" onclick="window.location.href='dashboard.html';">Dashboard</label>
+            <input type="radio" id="radio-2" name="tabs"/>
+            <label for="radio-2" class="tab" onclick="window.location.href='TicoRides.html';">Rides</label>
+            <input type="radio" id="radio-3" name="tabs"/>
+            <label for="radio-3" class="tab" onclick="window.location.href='settings.html';">Settings</label>
+            <span class="slider"></span>
+          </div>
         </div>
+        
+
       </div>
     </div>
     <div class="row">
@@ -72,7 +48,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>Brete</td>
+              <td>Trabajo</td>
               <td>Barrio Los Angeles</td>
               <td>Ciudad Quesada</td>
               <td>Edit - Delete</td>
@@ -81,7 +57,7 @@
               <td>Casa</td>
               <td>Ciudad Quesada</td>
               <td>Los Angeles</td>
-              <td>Edit - Delete</td>
+              <td><a href="editride.html">Edit</a> - Delete</td>
             </tr>
             <tr>
               <td>Oficina Chepe</td>
