@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Ride</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="styles/ridestyle.css">
 </head>
 <body>
     <div class="container">
@@ -35,7 +37,7 @@
             <div class="row">
                 <div class="twelve columns">
                     <label for="description">Description</label>
-                    <textarea id="description" class="large-textarea u-full-width" placeholder="Viaje corto, en menos de 20 minutos llegarás, servicio de lujo. Costo 5000 colones" readonly></textarea>
+                    <textarea id="description" class="large-textarea u-full-width" rows="5" placeholder="Viaje corto, en menos de 20 minutos llegarás, servicio de lujo. Costo 5000 colones" readonly></textarea>
                 </div>
             </div>
             <div class="divider"></div>
@@ -44,16 +46,12 @@
                 <div class="six columns">
                     <label for="departure">Departure</label>
                     <input type="text" id="departure" placeholder="6:40 AM" readonly class="u-full-width">
-                </div>
-                <div class="six columns">
                     <label for="estimated-arrival">Estimated Arrival</label>
                     <input type="text" id="estimated-arrival" placeholder="7:00 AM" readonly class="u-full-width">
                 </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns">
+                <div class="six columns">
                     <label>
-                        <input type="checkbox" checked disabled> Monday
+                        <input type="checkbox" checked  disabled> Monday
                     </label>
                     <label>
                         <input type="checkbox" checked disabled> Tuesday
@@ -68,10 +66,10 @@
                         <input type="checkbox" checked disabled> Friday
                     </label>
                     <label>
-                        <input type="checkbox" disabled> Saturday
+                        <input type="checkbox" checked disabled> Saturday
                     </label>
                     <label>
-                        <input type="checkbox" disabled> Sunday
+                        <input type="checkbox" disabled disabled> Sunday
                     </label>
                 </div>
             </div>

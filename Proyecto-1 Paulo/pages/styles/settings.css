@@ -33,18 +33,11 @@ cursor:pointer;
 transition:color 0.15s ease-in;
 
 }
-
-.badge{
-display: flex;
-align-items: center;
-justify-content: center;
-width: 2rem;
-height: 2rem;
-margin-left: 10px;
-border-radius:50%;
-background: #B7F397;
-
+a 
+{
+  color: #fff;
 }
+
 input[type="radio"]:checked + label{
 color: #042100
 }
@@ -66,7 +59,7 @@ position: absolute;
 display: flex;
 height: 40px;
 width: 100px;
-background: #27d7d4;
+background: #32c3f1;
 z-index:1;
 transition: 0.25s ease-out;
 border-radius: 60px;
@@ -137,18 +130,18 @@ text-align: center;
 text-decoration: none;
 outline: none;
 color: #fff;
-background-color: #33c3f0;
+background-color: #32c3f1;
 border: none;
 border-radius: 7px;
 
 }
-.btn:hover { background-color: #33a6f0 }
+.btn:hover { background-color: #f95c57 }
 .btn:active {
-background-color: #33a6f0;
+background-color: #f7dedd;
 box-shadow: 0 5px #666;
 transform: translateY(4px);
 }
-.btn.cancel { background-color: #ff4136;
+.btn.cancel { background-color: #f95c57;
 
 } 
 

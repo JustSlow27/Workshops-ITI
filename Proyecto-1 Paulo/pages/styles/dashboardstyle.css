@@ -76,7 +76,7 @@
         display: flex;
         height: 40px;
         width: 100px;
-        background: #27d7d4;
+        background: #32c3f1;
         z-index:1;
         transition: 0.25s ease-out;
         border-radius: 60px;
@@ -154,13 +154,9 @@
             color: #0275d8;
             text-decoration: none;
           }
+         
       
           .table-actions a:hover {
             text-decoration: underline;
           }
-          @media (max-width: 550px) {
-            .navbar a {
-              display: block;
-              margin-bottom: 5px;
-            }
-          }
+       

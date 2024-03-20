@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Ride</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="styles/ridestyle.css">
 </head>
 <body>
     <div class="container">
@@ -35,7 +35,7 @@
             <div class="row">
                 <div class="twelve columns">
                     <label for="description">Description</label>
-                    <textarea id="description" class="large-textarea u-full-width" placeholder="Ride económico, 8 am se parte y tiene un costo de 10000 colones por persona" readonly></textarea>
+                    <textarea id="description" class="large-textarea u-full-width" rows="5" placeholder="Ride económico, 8 am se parte y tiene un costo de 10000 colones por persona" readonly></textarea>
                 </div>
             </div>
             <div class="divider"></div>
@@ -44,14 +44,10 @@
                 <div class="six columns">
                     <label for="departure">Departure</label>
                     <input type="text" id="departure" placeholder="8:00 AM" readonly class="u-full-width">
-                </div>
-                <div class="six columns">
                     <label for="estimated-arrival">Estimated Arrival</label>
                     <input type="text" id="estimated-arrival" placeholder="10:05 AM" readonly class="u-full-width">
                 </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns">
+                <div class="six columns">
                     <label>
                         <input type="checkbox" disabled> Monday
                     </label>
