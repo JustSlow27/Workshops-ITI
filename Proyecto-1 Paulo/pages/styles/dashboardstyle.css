@@ -39,7 +39,7 @@
    .add-ride-container {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   @media (max-width: 767px) {
@@ -59,7 +59,6 @@
   }
    .u-full-width {
      width: auto;
-
      box-sizing: border-box;
      margin: 10px;
    }

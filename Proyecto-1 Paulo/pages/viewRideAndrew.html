@@ -1,7 +1,6 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet" href="styles/ridestyle.css">
 </head>
+
 <body>
     <div class="container">
         <div class="logo-container">
@@ -37,7 +37,9 @@
             <div class="row">
                 <div class="twelve columns">
                     <label for="description">Description</label>
-                    <textarea id="description" class="large-textarea u-full-width" rows="5" placeholder="Viaje corto, en menos de 20 minutos llegarás, servicio de lujo. Costo 5000 colones" readonly></textarea>
+                    <textarea id="description" class="large-textarea u-full-width" rows="5"
+                        placeholder="Viaje corto, en menos de 20 minutos llegarás, servicio de lujo. Costo 5000 colones"
+                        readonly></textarea>
                 </div>
             </div>
             <div class="divider"></div>
@@ -51,7 +53,7 @@
                 </div>
                 <div class="six columns">
                     <label>
-                        <input type="checkbox" checked  disabled> Monday
+                        <input type="checkbox" checked disabled> Monday
                     </label>
                     <label>
                         <input type="checkbox" checked disabled> Tuesday
@@ -69,26 +71,27 @@
                         <input type="checkbox" checked disabled> Saturday
                     </label>
                     <label>
-                        <input type="checkbox" disabled disabled> Sunday
+                        <input type="checkbox" disabled> Sunday
                     </label>
                 </div>
             </div>
             <div class="row">
                 <div class="twelve columns">
-                    <button class="button-primary"><a href="TicoRides.html">back</a></button>
+                    <button class="button" onclick="window.location.href='TicoRides.html'">Back</button>
                 </div>
             </div>
         </div>
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var checkboxes = document.querySelectorAll('.checkbox-group input[type="checkbox"]');
-            checkboxes.forEach(function(checkbox) {
-                checkbox.addEventListener('click', function(event) {
+            checkboxes.forEach(function (checkbox) {
+                checkbox.addEventListener('click', function (event) {
                     event.preventDefault();
                 });
             });
         });
     </script>
 </body>
+
 </html>

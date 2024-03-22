@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="styles/estilos.css">
 </head>
 <body>
-
     <img src="logo.png" alt="Logo" class="logo">
     <div class="login-container">
         <button class="button login-btn">Login</button>
     </div>
     <div class="navcontainer">
         <div class="tabs">
-          <input type="radio" id="radio-1" name="tabs">
-          <label for="radio-1" class="tab" onclick="window.location.href='dashboard.html';">Dashboard</label>
-          <input type="radio" id="radio-2" name="tabs"checked/>
-          <label for="radio-2" class="tab" onclick="window.location.href='TicoRides.html';">Rides</label>
-          <input type="radio" id="radio-3" name="tabs">
-          <label for="radio-3" class="tab" onclick="window.location.href='settings.html';">Settings</label>
-          <span class="slider"></span>
+            <input type="radio" id="radio-1" name="tabs">
+            <label for="radio-1" class="tab" onclick="window.location.href='dashboard.html';">Dashboard</label>
+            <input type="radio" id="radio-2" name="tabs" checked >
+            <label for="radio-2" class="tab" onclick="window.location.href='TicoRides.html';">Rides</label>
+            <input type="radio" id="radio-3" name="tabs">
+            <label for="radio-3" class="tab" onclick="window.location.href='settings.html';">Settings</label>
+            <span class="slider"></span>
         </div>
-      </div>
+    </div>
     <h1>Welcome to TicoRides.com</h1>
     <main class="container">
         <div class="row justify -content-center align-items-center">
@@ -37,7 +36,6 @@
         </div>
         <div class="results-container">
             <h2>Results for Rides that match your criteria:</h2>
-        
             <table class="u-full-width">
                 <thead>
                     <tr>
@@ -52,33 +50,28 @@
                         <td>Paulo</td>
                         <td>San José</td>
                         <td>Ciudad Quesada</td>
-                        <td><button class="button view-btn" data-user="Paulo"><a href="viewridePaulo.html">View</a></button></td>
+                        <td><button class="button view-btn" data-user="Paulo" onclick="window.location.href='viewridePaulo.html'">View</button></td>
                     </tr>
                     <tr>
                         <td>Randola</td>
                         <td>Naranjo</td>
                         <td>Fortuna</td>
-                        <td><button class="button view-btn" data-user="Randola"><a href="viewRideRandola.html">View</a></button></td>
+                        <td><button class="button view-btn" data-user="Randola" onclick="window.location.href='viewRideRandola.html'">View</button></td>
                     </tr>
                     <tr>
                         <td>Andrew</td>
                         <td>Santa Ana</td>
                         <td>San Pedro</td>
-                        <td><button class="button view-btn" data-user="Andrew"><a href="viewRideRandola.html">View</a</button></td>
+                        <td><button class="button view-btn" data-user="Andrew" onclick="window.location.href='viewRideRandola.html'">View</button></td>
                     </tr>
-                    <tr>
-
                 </tbody>
             </table>
         </div>
     </main>
     <script>
-      //al pulsar el botón login se redirige a la página de login
         document.querySelector('.login-btn').addEventListener('click', function() {
             window.location.href = 'login.html';
         });
-;
-
-  </script>
+    </script>
 </body>
 </html>

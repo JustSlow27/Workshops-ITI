@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet" href="rydestyle.css">
 </head>
+
 <body>
     <div class="container">
         <div class="logo-container">
             <img src="logo.png" alt="Logo" class="logo">
         </div>
         <div class="breadcrumb">
-            <a href="dashboard.html">Dashboard</a> >  <span>Edit Ride</span>
+            <a href="dashboard.html">Dashboard</a> > <span>Edit Ride</span>
         </div>
         <div class="form-container">
             <div class="row">
@@ -26,7 +27,8 @@
             <div class="row">
                 <div class="six columns">
                     <label for="start-from">Start From</label>
-                    <input type="text" id="start-from" placeholder="Barrio Gamonales, Ciudad Quesada" class="u-full-width">
+                    <input type="text" id="start-from" placeholder="Barrio Gamonales, Ciudad Quesada"
+                        class="u-full-width">
                 </div>
                 <div class="six columns">
                     <label for="end">End</label>
@@ -36,7 +38,8 @@
             <div class="row">
                 <div class="twelve columns">
                     <label for="description">Description</label>
-                    <textarea id="description" rows="3" placeholder="This is my middle-time job drive" class="u-full-width"></textarea>
+                    <textarea id="description" rows="3" placeholder="This is my middle-time job drive"
+                        class="u-full-width"></textarea>
                 </div>
             </div>
             <div class="divider"></div>
@@ -66,24 +69,26 @@
                         <input type="checkbox"> Thursday
                     </label>
                     <label>
-                        <input type="checkbox"  > Friday
+                        <input type="checkbox"> Friday
                     </label>
                     <label>
                         <input type="checkbox"> Saturday
                     </label>
                     <label>
-                        <input type="checkbox"checked>  Sunday
+                        <input type="checkbox" checked> Sunday
                     </label>
                 </div>
             </div>
             <div class="row">
                 <div class="six columns">
-                    <button class="button"><a href="dashboard.html">Cancel</a></button>
+                    <button class="button" onclick="window.location.href='dashboard.html'">Cancel</button>
                 </div>
                 <div class="six columns">
-                    <button class="button view-btn"><a href="dashboard.html">Save</a></button>                </div>
+                    <button class="button" onclick="window.location.href='dashboard.html'">Save</button>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
