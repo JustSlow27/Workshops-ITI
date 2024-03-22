@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadatos para asegurar una correcta visualización y escalabilidad en dispositivos móviles, junto con la codificación de caracteres -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+    <!-- Vinculación con hojas de estilo para un diseño coherente y personalizado -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet" href="styles/estilos.css">
 </head>
 <body>
+    <!-- Logo de la página ubicado de manera destacada -->
     <img src="logo.png" alt="Logo" class="logo">
+    <!-- Botón de inicio de sesión para usuarios -->
     <div class="login-container">
         <button class="button login-btn">Login</button>
     </div>
+    <!-- Navegación principal de la página mediante pestañas -->
     <div class="navcontainer">
         <div class="tabs">
+            <!-- Opciones de navegación para acceder a diferentes secciones del sitio -->
             <input type="radio" id="radio-1" name="tabs">
             <label for="radio-1" class="tab" onclick="window.location.href='dashboard.html';">Dashboard</label>
             <input type="radio" id="radio-2" name="tabs" checked >
@@ -23,10 +29,13 @@
             <span class="slider"></span>
         </div>
     </div>
+    <!-- Mensaje de bienvenida en la página principal -->
     <h1>Welcome to TicoRides.com</h1>
+    <!-- Contenedor principal para la funcionalidad de búsqueda de viajes -->
     <main class="container">
-        <div class="row justify -content-center align-items-center">
+        <div class="row justify-content-center align-items-center">
             <div class="six rows">
+                <!-- Formulario de búsqueda con campos de texto y un botón de envío -->
                 <div class="search-container">
                     <input type="text" placeholder="From" id="fromInput" class="u-full-width">
                     <input type="text" placeholder="To" id="toInput" class="u-full-width">
@@ -34,6 +43,7 @@
                 </div>
             </div>
         </div>
+        <!-- Contenedor para mostrar resultados de búsqueda con una tabla -->
         <div class="results-container">
             <h2>Results for Rides that match your criteria:</h2>
             <table class="u-full-width">
@@ -46,6 +56,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Ejemplos de resultados con botones para ver detalles -->
                     <tr>
                         <td>Paulo</td>
                         <td>San José</td>
@@ -62,12 +73,13 @@
                         <td>Andrew</td>
                         <td>Santa Ana</td>
                         <td>San Pedro</td>
-                        <td><button class="button view-btn" data-user="Andrew" onclick="window.location.href='viewRideRandola.html'">View</button></td>
+                        <td><button class="button view-btn" data-user="Andrew" onclick="window.location.href='viewRideAndrew.html'">View</button></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </main>
+    <!-- Script para manejar el evento de clic en el botón de login, redireccionando a la página de inicio de sesión -->
     <script>
         document.querySelector('.login-btn').addEventListener('click', function() {
             window.location.href = 'login.html';

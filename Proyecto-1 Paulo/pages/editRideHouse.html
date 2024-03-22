@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Configuración básica de la página, incluyendo charset UTF-8 y viewport para Telefonos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Ride</title>
+    <!-- Enlaces a las hojas de estilo de Skeleton para estilos básicos y rydestyle.css para estilos personalizados -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet" href="rydestyle.css">
 </head>
-
 <body>
     <div class="container">
+        <!-- Contenedor para el logo de la página -->
         <div class="logo-container">
             <img src="logo.png" alt="Logo" class="logo">
         </div>
+        <!-- Breadcrumb para mejorar la navegación del usuario al mostrar la página actual y enlaces a páginas anteriores -->
         <div class="breadcrumb">
             <a href="dashboard.html">Dashboard</a> > <span>Edit Ride</span>
         </div>
+        <!-- Contenedor principal para el formulario de edición de un viaje -->
         <div class="form-container">
+            <!-- Entrada para el nombre del viaje -->
             <div class="row">
                 <div class="six columns">
                     <label for="ride-name">Ride Name</label>
                     <input type="text" id="ride-name" placeholder="Casa" class="u-full-width">
                 </div>
             </div>
+            <!-- Entradas para las direcciones de inicio y fin del viaje -->
             <div class="row">
                 <div class="six columns">
                     <label for="start-from">Start From</label>
-                    <input type="text" id="start-from" placeholder="Barrio Lourdes, Ciudad Quesada"
-                        class="u-full-width">
+                    <input type="text" id="start-from" placeholder="Barrio Lourdes, Ciudad Quesada" class="u-full-width">
                 </div>
                 <div class="six columns">
                     <label for="end">End</label>
                     <input type="text" id="end" placeholder="Gamonales, Ciudad Quesada" class="u-full-width">
                 </div>
             </div>
+            <!-- Área para la descripción del viaje -->
             <div class="row">
                 <div class="twelve columns">
                     <label for="description">Description</label>
-                    <textarea id="description" rows="3" placeholder="I take this ride when I finish classes at the Utn "
-                        class="u-full-width"></textarea>
+                    <textarea id="description" rows="3" placeholder="I take this ride when I finish classes at the Utn" class="u-full-width"></textarea>
                 </div>
             </div>
             <div class="divider"></div>
+            <!-- Sección para especificar la hora de salida y llegada estimada -->
             <h4>When</h4>
             <div class="row">
                 <div class="six columns">
@@ -54,31 +59,19 @@
                     <input type="text" id="estimated-arrival" placeholder="4:40 PM" class="u-full-width">
                 </div>
             </div>
+            <!-- Opciones para los días de la semana en los que se realiza el viaje -->
             <div class="row">
                 <div class="twelve columns">
-                    <label>
-                        <input type="checkbox" checked> Monday
-                    </label>
-                    <label>
-                        <input type="checkbox"> Tuesday
-                    </label>
-                    <label>
-                        <input type="checkbox"> Wednesday
-                    </label>
-                    <label>
-                        <input type="checkbox" checked> Thursday
-                    </label>
-                    <label>
-                        <input type="checkbox" checked> Friday
-                    </label>
-                    <label>
-                        <input type="checkbox" checked> Saturday
-                    </label>
-                    <label>
-                        <input type="checkbox"> Sunday
-                    </label>
+                    <label><input type="checkbox" checked> Monday</label>
+                    <label><input type="checkbox"> Tuesday</label>
+                    <label><input type="checkbox"> Wednesday</label>
+                    <label><input type="checkbox" checked> Thursday</label>
+                    <label><input type="checkbox" checked> Friday</label>
+                    <label><input type="checkbox" checked> Saturday</label>
+                    <label><input type="checkbox"> Sunday</label>
                 </div>
             </div>
+            <!-- Botones para cancelar o guardar los cambios realizados en el formulario -->
             <div class="row">
                 <div class="six columns">
                     <button class="button" onclick="window.location.href='dashboard.html'">Cancel</button>
@@ -90,5 +83,4 @@
         </div>
     </div>
 </body>
-
 </html>

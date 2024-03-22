@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Configuración de la página para garantizar una correcta visualización en diferentes dispositivos y definir la codificación de caracteres -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <!-- Vinculación con hojas de estilo para la apariencia de la página, incluyendo una librería externa y estilos personalizados -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet" href="styles/loginstyle.css">
 </head>
 <body>
     <div class="container">
+        <!-- Contenedor para el logo de la página de login -->
         <div class="login-logo">
             <img src="logo.png" alt="Logo">
         </div>
+        <!-- Formulario de login -->
         <form class="login-form">
+            <!-- Campo para el nombre de usuario -->
             <label for="username">Username</label>
             <input type="text" id="username" placeholder="Enter username">
+            <!-- Campo para la contraseña -->
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="Enter password">
+            <!-- Botón para iniciar sesión -->
             <button type="button" id="login-btn">Login</button>
+            <!-- Enlace para usuarios que no tienen cuenta y desean registrarse -->
             <p>Not an user? <a href="registration.html">Register Here</a></p>
         </form>
     </div>
+    <!-- Script para gestionar el evento de clic en el botón de login, actualmente redirige al dashboard sin validar los datos ingresados -->
     <script>
         document.getElementById('login-btn').addEventListener('click', function () {
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
+            // Redirección provisional al dashboard
             window.location.href = 'dashboard.html';
         });
     </script>
 </body>
-
 </html>

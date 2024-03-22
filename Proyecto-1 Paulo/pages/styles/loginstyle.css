@@ -1,24 +1,28 @@
+/* Estilos generales para el contenedor para asegurar un diseño consistente */
 .container {
-    max-width: 300px;
-    margin: auto;
-    padding: 20px;
-    box-sizing: border-box;
+    max-width: 300px; 
+    margin: auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
+/* Estilos para el logotipo de inicio de sesión para centralizarlo y gestionar el espaciado */
 .login-logo {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
+/* Asegura que la imagen del logotipo se escale adecuadamente dentro de su contenedor */
 .login-logo img {
     max-width: 100%;
-    height: auto;
+    height: auto; 
 }
 
+/* Estilos para entradas de texto y botón de inicio de sesión en el formulario de inicio de sesión para consistencia y diseño */
 .login-form input[type="text"],
 .login-form input[type="password"],
 #login-btn {
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
+    margin-bottom: 10px; 
+    width: 100%; 
+    box-sizing: border-box; 
 }

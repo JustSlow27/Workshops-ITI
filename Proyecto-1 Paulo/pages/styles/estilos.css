@@ -1,266 +1,278 @@
+/* Estilos para el contenedor del encabezado */
 .header-container {
-  border: 2px solid #32c3f1;
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  border: 2px solid #32c3f1; 
+  padding: 10px; 
+  text-align: center; 
+  margin-bottom: 20px; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  align-items: center; 
 }
 
+/* Estilos para los enlaces */
 a {
-  color: #fff;
+  color: #fff; 
 }
 
+/* Estilos para los botones */
 .button {
-  background-color: #32c3f1;
-  color: #FFF;
-
+  background-color: #32c3f1; 
+  color: #FFF; 
 }
 
-
+/* Estilos para el contenedor de navegación */
 .navcontainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 650px;
-  margin-bottom: 8px;
-  position: relative;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  margin-right: 650px; 
+  margin-bottom: 8px; 
+  position: relative; 
 }
 
-
-
+/* Estilos para las pestañas de navegación */
 .tabs {
-  display: flex;
-  font-size: 14px;
-  background: white;
-  padding: 5px;
-  border-radius: 70px;
-  box-shadow: 0px 6px 12px rgba(24, 94, 224, 0.15);
+  display: flex; 
+  font-size: 14px; 
+  background: white; 
+  padding: 5px; 
+  border-radius: 70px; 
+  box-shadow: 0px 6px 12px rgba(24, 94, 224, 0.15); 
 }
 
+/* Estilos para los elementos dentro de las pestañas */
 .tabs * {
-  z-index: 4;
+  z-index: 4; 
 }
 
+/* Oculta los inputs de tipo radio */
 input[type="radio"] {
   display: none;
 }
 
+/* Estilos para las pestañas individuales */
 .tab {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 100px;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 70px;
-  cursor: pointer;
-  transition: color 0.15s ease-in;
-
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  height: 40px; 
+  width: 100px; 
+  font-size: 15px; 
+  font-weight: 600; 
+  border-radius: 70px; 
+  cursor: pointer; 
+  transition: color 0.15s ease-in; 
 }
 
-
+/* Estilos para la etiqueta seleccionada */
 input[type="radio"]:checked+label {
-  color: #042100
+  color: #042100; 
 }
 
+/* Estilos para el badge de la etiqueta seleccionada */
 input[type="radio"]:checked+label>.badge {
-  background: #042100;
-  color: white;
+  background: #042100; 
+  color: white; 
 }
 
+/* Estilos para la posición del slider cuando la primera pestaña está seleccionada */
 input[id="radio-1"]:checked~.slider {
-  transform: translateX(0%);
+  transform: translateX(0%); 
 }
 
+/* Estilos para la posición del slider cuando la segunda pestaña está seleccionada */
 input[id="radio-2"]:checked~.slider {
-  transform: translateX(100%);
+  transform: translateX(100%); 
 }
 
+/* Estilos para la posición del slider cuando la tercera pestaña está seleccionada */
 input[id="radio-3"]:checked~.slider {
-  transform: translateX(200%);
+  transform: translateX(200%); 
 }
 
+/* Estilos para el slider */
 .slider {
-  position: absolute;
-  display: flex;
-  height: 40px;
-  width: 100px;
-  background: #32c3f1;
-  z-index: 1;
-  transition: 0.25s ease-out;
-  border-radius: 60px;
+  position: absolute; 
+  display: flex; 
+  height: 40px; 
+  width: 100px; 
+  background: #32c3f1; 
+  z-index: 1; 
+  transition: 0.25s ease-out; 
+  border-radius: 60px; 
 }
 
-
+/* Estilos para el contenedor de búsqueda */
 .search-container {
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  justify-content: left;
+  display: flex; 
+  flex-direction: row; 
+  align-items: left; 
+  justify-content: left; 
   margin-left: 0;
-  margin-right: -100px;
+  margin-right: -100px; 
 }
 
+/* Estilos para los inputs de texto y botones dentro del contenedor de búsqueda */
 .search-container input[type="text"],
 .search-container button {
-
-  width: auto;
+  width: auto; 
   max-width: 200px;
-  margin: 0 10px;
+  margin: 0 10px; 
 }
 
+/* Estilos para iphone 12 pro */
 @media (max-width: 480px) {
   .search-container {
-    flex-direction: column;
+    flex-direction: column; 
   }
 
   .navcontainer {
-    margin-right: 0;
+    margin-right: 0; 
   }
 
   .search-container input[type="text"],
   .search-container button {
-    width: 100%;
-    max-width: none;
+    width: 100%; 
+    max-width: none; 
     margin: 5px 0;
   }
 }
 
+/* Estilos para el logotipo */
 .logo {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  display: block; 
+  margin: 0 auto; 
+  max-width: 100%; 
+  height: auto; 
+  margin-top: 5px; 
+  margin-bottom: 10px; 
 }
 
+/* Estilos para el encabezado h1 */
 h1 {
-  font-size: 33px;
-  text-align: center;
-  margin: 10px 0;
-  margin-right: 580px;
-  flex: 1;
-
+  font-size: 33px; 
+  text-align: center; 
+  margin: 10px 0; 
+  margin-right: 580px; 
+  flex: 1; 
 }
 
+/* Estilos para el encabezado h2 */
 h2 {
-  font-size: 22px;
+  font-size: 22px; 
   text-align: left;
-  margin: 10px 0;
-  margin-right: 610px;
-  flex: 1;
+  margin: 10px 0; 
+  margin-right: 610px; 
+  flex: 1; 
 }
 
+/* Estilos para el encabezado h1 dentro del contenedor del encabezado */
 .header-container h1 {
-  margin: 0;
-  padding: 0;
-  flex-grow: 1;
+  margin: 0; 
+  padding: 0; 
+  flex-grow: 1; 
 }
 
+/* Estilos para el contenedor de inicio de sesión */
 .login-container {
-  padding: 0px;
-  text-align: end;
-  margin-top: 100px;
+  padding: 0px; 
+  text-align: end; 
+  margin-top: 100px; 
   margin-bottom: 100px;
-  margin-right: 590px;
+  margin-right: 590px; 
 }
 
-
+/* Estilos para dispositivos móviles */
 @media (max-width: 480px) {
   .header-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; 
+    align-items: center; 
   }
 
   h1 {
-    margin-right: 0;
-
-    text-align: center;
+    margin-right: 0; 
+    text-align: center; 
   }
 
   .login-container {
-    padding: 0px;
-    text-align: center;
-    margin-top: -200px;
-    margin-bottom: 100px;
-
+    padding: 0px; 
+    text-align: center; 
+    margin-top: -200px; 
+    margin-bottom: 100px; 
   }
 }
 
+/* Estilos adicionales */
 .search-container {
-  margin-left: -10px;
+  margin-left: -10px; 
   margin-right: -10px;
 }
 
 .logo {
-  margin-bottom: -350px;
+  margin-bottom: -350px; /* Ajusta el margen inferior del logotipo */
 }
 
 .view-btn {
-  margin-left: -10px;
+  margin-left: -10px; /* Ajusta el margen izquierdo del botón de vista */
 }
 
 .login-container {
-  text-align: end;
-  margin-bottom: 250px;
+  text-align: end; /* Alinea el texto a la derecha en el contenedor de inicio de sesión */
+  margin-bottom: 250px; /* Ajusta el margen inferior del contenedor de inicio de sesión */
 }
 
 h2 {
-  margin-right: 0;
-  text-align: left;
+  margin-right: 0; /* Elimina el margen derecho del encabezado h2 */
+  text-align: left; /* Alinea el texto a la izquierda en el encabezado h2 */
 }
 
+/* Estilos para pantallas grandes */
 @media (min-width: 1024px) and (min-height: 1366px) {
   .header-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; 
+    align-items: center; 
   }
 
   h1 {
-    margin-left: 100px;
-    font-size: 25px;
-    text-align: left;
+    margin-left: 100px; 
+    font-size: 25px; 
+    text-align: left; 
   }
 
   .login-container {
-    padding: 0px;
-    text-align: end;
-    margin-top: -200px;
-    margin-bottom: 100px;
-
+    padding: 0px; 
+    text-align: end; 
+    margin-top: -200px; 
+    margin-bottom: 100px; 
   }
 
   .navcontainer {
-    margin-left: -500px;
-    text-align: left;
+    margin-left: -500px; 
+    text-align: left; 
   }
 
   .search-container {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -10px; 
+    margin-right: -10px; 
   }
 
   .logo {
-    margin-bottom: -350px;
+    margin-bottom: -350px; /* Ajusta el margen inferior del logotipo */
   }
 
   .view-btn {
-    margin-left: -10px;
+    margin-left: -10px; /* Ajusta el margen izquierdo del botón de vista */
   }
 
   .login-container {
-    text-align: end;
-    margin-bottom: 250px;
-    margin-left: 900px;
+    text-align: end; /* Alinea el texto a la derecha en el contenedor de inicio de sesión */
+    margin-bottom: 250px; /* Ajusta el margen inferior del contenedor de inicio de sesión */
+    margin-left: 900px; /* Agrega un margen izquierdo de 900 píxeles al contenedor de inicio de sesión */
   }
 
   h2 {
-    margin-right: 0;
-    text-align: left;
+    margin-right: 0; /* Elimina el margen derecho del encabezado h2 */
+    text-align: left; /* Alinea el texto a la izquierda en el encabezado h2 */
   }
 }

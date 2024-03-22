@@ -1,42 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Definición de la codificación de caracteres y la visualización responsiva para dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <!-- Enlace a la hoja de estilos de Skeleton para un diseño básico y a la hoja de estilos personalizada del dashboard -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet" href="styles/dashboardstyle.css">
 </head>
 <body>
     <div class="container">
+        <!-- Fila para el logotipo de la página -->
         <div class="row">
             <div class="twelve columns">
                 <img src="logo.png" alt="Logo">
             </div>
         </div>
+        <!-- Fila para la navegación principal de la página, utilizando un sistema de pestañas -->
         <div class="row">
             <div class="twelve columns">
                 <div class="navcontainer">
                     <div class="tabs">
+                        <!-- Pestañas para la navegación entre diferentes secciones del sitio -->
                         <input type="radio" id="radio-1" name="tabs" checked>
                         <label for="radio-1" class="tab" onclick="window.location.href='dashboard.html';">Dashboard</label>
                         <input type="radio" id="radio-2" name="tabs">
                         <label for="radio-2" class="tab" onclick="window.location.href='TicoRides.html';">Rides</label>
                         <input type="radio" id="radio-3" name="tabs">
                         <label for="radio-3" class="tab" onclick="window.location.href='settings.html';">Settings</label>
+                        <!-- Slider que indica visualmente la pestaña activa -->
                         <span class="slider"></span>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Sección principal del dashboard con un resumen y gestión de los viajes -->
         <div class="row">
             <div class="twelve columns">
                 <h4>Dashboard</h4>
+                <!-- Breadcrumb para indicar la ubicación actual dentro de la estructura del sitio -->
                 <div class="breadcrumb">Dashboard &gt;</div>
+                <!-- Subsección para la gestión de viajes -->
                 <h5>My Rides</h5>
+                <!-- Botón para agregar nuevos viajes -->
                 <div class="add-ride-container">
                   <button class="button" onclick="window.location.href='addRide.html'">Add Ride</button>
                 </div>
+                <!-- Tabla para mostrar los viajes actuales y permitir la edición o eliminación de estos -->
                 <table>
                     <thead>
                         <tr>
@@ -47,17 +58,18 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <!-- Ejemplos de filas con información de viajes -->
                         <tr>
                             <td>Trabajo</td>
                             <td>Barrio Los Angeles</td>
                             <td>Ciudad Quesada</td>
-                            <td><a href="editRideTrabajo.html">Edit</a> - Delete</td>
+                            <td><a href="editRideJob.html">Edit</a> - Delete</td>
                         </tr>
                         <tr>
                             <td>Casa</td>
                             <td>Ciudad Quesada</td>
                             <td>Los Angeles</td>
-                            <td><a href="editRideCasa.html">Edit</a> - Delete</td>
+                            <td><a href="editRideHouse.html">Edit</a> - Delete</td>
                         </tr>
                         <tr>
                             <td>Utn</td>

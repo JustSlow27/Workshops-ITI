@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Meta tags para configurar la codificación de caracteres y la vista en dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Ride</title>
+    <!-- Enlaces a Skeleton para estilos básicos y hoja de estilos personalizada -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet" href="rydestyle.css">
 </head>
-
 <body>
     <div class="container">
+        <!-- Contenedor para el logo -->
         <div class="logo-container">
             <img src="logo.png" alt="Logo" class="logo">
         </div>
+        <!-- Breadcrumb para navegación -->
         <div class="breadcrumb">
             <a href="dashboard.html">Dashboard</a> > <span>Edit Ride</span>
         </div>
+        <!-- Contenedor para el formulario de edición de un viaje -->
         <div class="form-container">
+            <!-- Fila para el nombre del viaje -->
             <div class="row">
                 <div class="six columns">
                     <label for="ride-name">Ride Name</label>
                     <input type="text" id="ride-name" placeholder="Trabajo" class="u-full-width">
                 </div>
             </div>
+            <!-- Fila para las direcciones de inicio y fin del viaje -->
             <div class="row">
                 <div class="six columns">
                     <label for="start-from">Start From</label>
-                    <input type="text" id="start-from" placeholder="Barrio Gamonales, Ciudad Quesada"
-                        class="u-full-width">
+                    <input type="text" id="start-from" placeholder="Barrio Gamonales, Ciudad Quesada" class="u-full-width">
                 </div>
                 <div class="six columns">
                     <label for="end">End</label>
                     <input type="text" id="end" placeholder="San Vicente, Ciudad Quesada" class="u-full-width">
                 </div>
             </div>
+            <!-- Fila para la descripción del viaje -->
             <div class="row">
                 <div class="twelve columns">
                     <label for="description">Description</label>
-                    <textarea id="description" rows="3" placeholder="This is my middle-time job drive"
-                        class="u-full-width"></textarea>
+                    <textarea id="description" rows="3" placeholder="This is my middle-time job drive" class="u-full-width"></textarea>
                 </div>
             </div>
             <div class="divider"></div>
+            <!-- Sección para indicar la hora de salida y llegada estimada -->
             <h4>When</h4>
             <div class="row">
                 <div class="six columns">
@@ -54,31 +59,20 @@
                     <input type="text" id="estimated-arrival" placeholder="7:05 AM" class="u-full-width">
                 </div>
             </div>
+            <!-- Fila para los días de la semana -->
             <div class="row">
                 <div class="twelve columns">
-                    <label>
-                        <input type="checkbox" checked> Monday
-                    </label>
-                    <label>
-                        <input type="checkbox" checked> Tuesday
-                    </label>
-                    <label>
-                        <input type="checkbox" checked> Wednesday
-                    </label>
-                    <label>
-                        <input type="checkbox"> Thursday
-                    </label>
-                    <label>
-                        <input type="checkbox"> Friday
-                    </label>
-                    <label>
-                        <input type="checkbox"> Saturday
-                    </label>
-                    <label>
-                        <input type="checkbox" checked> Sunday
-                    </label>
+                    <!-- Checkbox para cada día de la semana, marcando los días que el viaje está activo -->
+                    <label><input type="checkbox" checked> Monday</label>
+                    <label><input type="checkbox" checked> Tuesday</label>
+                    <label><input type="checkbox" checked> Wednesday</label>
+                    <label><input type="checkbox"> Thursday</label>
+                    <label><input type="checkbox"> Friday</label>
+                    <label><input type="checkbox"> Saturday</label>
+                    <label><input type="checkbox" checked> Sunday</label>
                 </div>
             </div>
+            <!-- Fila para los botones de cancelar y guardar -->
             <div class="row">
                 <div class="six columns">
                     <button class="button" onclick="window.location.href='dashboard.html'">Cancel</button>
@@ -90,5 +84,4 @@
         </div>
     </div>
 </body>
-
 </html>

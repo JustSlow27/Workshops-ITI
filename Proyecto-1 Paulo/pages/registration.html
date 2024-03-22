@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Configuración básica de la página para compatibilidad y responsividad -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration</title>
+    <!-- Enlace a la hoja de estilos de Skeleton para un diseño básico y rápida implementación -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <style>
+        /* Estilos específicos para el contenedor y la sección de logo en el formulario de registro */
         .container {
-            max-width: 400px;
-            margin: auto;
-            padding: 20px;
-            box-sizing: border-box;
+            max-width: 400px; /* Limita el ancho máximo del contenedor */
+            margin: auto; /* Centra el contenedor en la página */
+            padding: 20px; /* Proporciona un relleno interno */
+            box-sizing: border-box; /* Ajusta el modelo de caja para incluir padding y border en el ancho y alto */
         }
 
         .registration-logo {
-            text-align: center;
-            margin-bottom: 20px;
+            text-align: center; /* Centra el logo horizontalmente */
+            margin-bottom: 20px; /* Añade un margen inferior para separarlo del formulario */
         }
 
         .registration-logo img {
-            max-width: 100%;
-            height: auto;
+            max-width: 100%; /* Asegura que el logo no exceda el ancho del contenedor */
+            height: auto; /* Mantiene la relación de aspecto original del logo */
         }
 
+        /* Estilos para los campos de entrada del formulario, proporcionando consistencia y usabilidad */
         .registration-form input[type="text"],
         .registration-form input[type="password"] {
-            margin-bottom: 10px;
-            width: 100%;
-            box-sizing: border-box;
+            margin-bottom: 10px; /* Separa los campos de entrada verticalmente */
+            width: 100%; /* Establece el ancho de los campos de entrada para llenar el contenedor */
+            box-sizing: border-box; /* Ajusta el modelo de caja para incluir padding y border en el ancho y alto */
         }
     </style>
 </head>
-
 <body>
     <div class="container">
+        <!-- Sección del logo para el formulario de registro -->
         <div class="registration-logo">
             <img src="logo.png" alt="Logo">
         </div>
+        <!-- Formulario de registro para nuevos usuarios -->
         <form class="registration-form">
+            <!-- Campo para el nombre, apellido, teléfono, nombre de usuario y contraseña con etiquetas y placeholders descriptivos -->
             <label for="firstName">First Name</label>
             <input type="text" id="firstName" placeholder="Input text">
             <label for="lastName">Last Name</label>
@@ -51,15 +56,17 @@
             <input type="password" id="password" placeholder="Input text">
             <label for="repeatPassword">Repeat Password</label>
             <input type="password" id="repeatPassword" placeholder="Input text">
+            <!-- Botón para enviar el formulario de registro -->
             <button type="button" id="register-btn">Register</button>
+            <!-- Enlace para usuarios existentes que necesiten iniciar sesión -->
             <p>Already an user? <a href="login.html">Login Here</a></p>
         </form>
     </div>
+    <!-- Script para manejar el clic en el botón de registro, actualmente redirige a la página de inicio de sesión -->
     <script>
         document.getElementById('register-btn').addEventListener('click', function () {
             window.location.href = 'login.html';
         });
     </script>
 </body>
-
 </html>

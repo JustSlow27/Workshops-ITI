@@ -1,49 +1,54 @@
+/* Establece el color de todos los enlaces a blanco */
 a {
     color: #fff;
 }
 
+/* Estilos para el contenedor del logotipo, centrando el contenido y gestionando el espacio inferior */
 .logo-container {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; 
+    margin-bottom: 20px; /* Añade espacio debajo del contenedor para separarlo de otros elementos */
 }
 
-
-
-
+/* Asegura que el logotipo se escale correctamente dentro de su contenedor */
 .logo {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; 
+    height: auto; 
 }
 
+/* Estilos para los elementos breadcrumb, definiendo el tamaño de fuente y el color */
 .breadcrumb {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
+    font-size: 14px; 
+    color: #666; 
+    margin-bottom: 20px; 
 }
 
+/* Estilos para enlaces dentro de los breadcrumbs, definiendo el color y eliminando el subrayado */
 .breadcrumb a {
-    color: #666;
-    text-decoration: none;
+    color: #666; 
+    text-decoration: none; 
 }
 
+/* Gestiona el espaciado entre ítems de los breadcrumbs */
 .breadcrumb span {
-    margin: 0 5px;
+    margin: 0 5px; 
 }
 
+/* Estilos para el divisor, añadiendo una línea horizontal y gestionando el espacio vertical */
 .divider {
-    border-bottom: 1px solid #ccc;
-    margin: 20px 0;
+    border-bottom: 1px solid #ccc; 
+    margin: 20px 0; 
 }
 
+/* Estilos base para botones, estableciendo color de fondo, color de texto y gestión del margen derecho */
 .button {
-    margin-right: 0;
-    color: white;
-    background-color: #32c3f1;
+    margin-right: 0; 
+    color: white; 
+    background-color: #32c3f1; 
 }
 
+/* Estilos para botones primarios, con enfoque en color de fondo, color de texto y gestión del margen izquierdo */
 .button-primary {
-    margin-left: 0;
+    margin-left: 0; 
     color: white;
-    background-color: #32c3f1;
-
+    background-color: #32c3f1; 
 }

@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Metadatos esenciales para la correcta visualización y funcionamiento en diversos dispositivos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Ride</title>
+    <!-- Enlaces a las hojas de estilos de Skeleton para un diseño básico y a estilos personalizados -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet" href="styles/ridestyle.css">
 </head>
-
 <body>
     <div class="container">
+        <!-- Sección del logo para reforzar la identidad de la página -->
         <div class="logo-container">
             <img src="logo.png" alt="Logo" class="logo">
         </div>
+        <!-- Breadcrumb para facilitar la navegación a páginas previas -->
         <div class="breadcrumb">
             <a href="dashboard.html">Dashboard</a> > <a href="TicoRides.html">Rides</a> > <span>View</span>
         </div>
+        <!-- Contenedor del formulario que muestra los detalles del viaje de forma no editable -->
         <div class="form-container">
+            <!-- Sección para el nombre del conductor del viaje -->
             <div class="row">
                 <div class="six columns">
                     <label for="ride-name">Ride Driver</label>
                     <input type="text" id="ride-name" placeholder="Randola" readonly class="u-full-width">
                 </div>
             </div>
+            <!-- Detalles del inicio y fin del viaje -->
             <div class="row">
                 <div class="six columns">
                     <label for="start-from">Start From</label>
@@ -34,6 +39,7 @@
                     <input type="text" id="end" placeholder="Fortuna" readonly class="u-full-width">
                 </div>
             </div>
+            <!-- Descripción detallada del viaje -->
             <div class="row">
                 <div class="twelve columns">
                     <label for="description">Description</label>
@@ -43,6 +49,7 @@
                 </div>
             </div>
             <div class="divider"></div>
+            <!-- Información sobre el horario de salida y llegada estimada -->
             <h4>When</h4>
             <div class="row">
                 <div class="six columns">
@@ -51,30 +58,18 @@
                     <label for="estimated-arrival">Estimated Arrival</label>
                     <input type="text" id="estimated-arrival" placeholder="10:05 AM" readonly class="u-full-width">
                 </div>
+                <!-- Días de la semana en los que se realiza el viaje, mostrados de forma no interactiva -->
                 <div class="six columns">
-                    <label>
-                        <input type="checkbox" disabled> Monday
-                    </label>
-                    <label>
-                        <input type="checkbox" disabled> Tuesday
-                    </label>
-                    <label>
-                        <input type="checkbox" disabled> Wednesday
-                    </label>
-                    <label>
-                        <input type="checkbox" disabled> Thursday
-                    </label>
-                    <label>
-                        <input type="checkbox" disabled> Friday
-                    </label>
-                    <label>
-                        <input type="checkbox" checked disabled> Saturday
-                    </label>
-                    <label>
-                        <input type="checkbox" disabled> Sunday
-                    </label>
+                    <label><input type="checkbox" disabled> Monday</label>
+                    <label><input type="checkbox" disabled> Tuesday</label>
+                    <label><input type="checkbox" disabled> Wednesday</label>
+                    <label><input type="checkbox" disabled> Thursday</label>
+                    <label><input type="checkbox" disabled> Friday</label>
+                    <label><input type="checkbox" checked disabled> Saturday</label>
+                    <label><input type="checkbox" disabled> Sunday</label>
                 </div>
             </div>
+            <!-- Botón para regresar a la vista anterior -->
             <div class="row">
                 <div class="twelve columns">
                     <button class="button" onclick="window.location.href='TicoRides.html'">Back</button>
@@ -82,6 +77,7 @@
             </div>
         </div>
     </div>
+    <!-- Script para prevenir la interacción con los checkboxes, manteniendo la integridad de la información mostrada -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var checkboxes = document.querySelectorAll('.checkbox-group input[type="checkbox"]');
@@ -93,5 +89,4 @@
         });
     </script>
 </body>
-
 </html>

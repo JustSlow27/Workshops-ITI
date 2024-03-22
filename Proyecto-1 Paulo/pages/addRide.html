@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Meta tags esenciales para la página, incluyendo el conjunto de caracteres y la configuración de la vista en dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Ride</title>
+    <!-- Enlaces a hojas de estilos externas, Skeleton para un rápido prototipado y estilos personalizados -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet" href="rydestyle.css">
 </head>
-
 <body>
-
     <div class="container">
+        <!-- Contenedor del logo -->
         <div class="logo-container">
-
             <img src="logo.png" alt="Logo" class="logo">
         </div>
+        <!-- Título de la página -->
         <div class="title">
             <h1>Add Ride</h1>
         </div>
+        <!-- Navegación tipo breadcrumb para mejorar la experiencia de usuario -->
         <div class="breadcrumb">
             <a href="dashboard.html">Dashboard</a> > <span>Edit Ride</span>
         </div>
-
+        <!-- Contenedor principal del formulario -->
         <div class="form-container">
+            <!-- Campo de texto para el nombre del viaje -->
             <div class="row">
                 <div class="six columns">
                     <label for="ride-name">Ride Name</label>
                     <input type="text" id="ride-name" placeholder="Name your ride" class="u-full-width">
                 </div>
             </div>
+            <!-- Campos de texto para las ubicaciones de inicio y fin -->
             <div class="row">
                 <div class="six columns">
                     <label for="start-from">Start From</label>
@@ -40,6 +43,7 @@
                     <input type="text" id="end" placeholder="End destination" class="u-full-width">
                 </div>
             </div>
+            <!-- Área de texto para la descripción del viaje -->
             <div class="row">
                 <div class="twelve columns">
                     <label for="description">Description</label>
@@ -47,6 +51,7 @@
                 </div>
             </div>
             <div class="divider"></div>
+            <!-- Sección para definir la hora de salida y llegada estimada -->
             <h4>When</h4>
             <div class="row">
                 <div class="six columns">
@@ -58,31 +63,19 @@
                     <input type="text" id="estimated-arrival" placeholder="00:00 PM" class="u-full-width">
                 </div>
             </div>
+            <!-- Checkbox para seleccionar los días de la semana -->
             <div class="row">
                 <div class="twelve columns">
-                    <label>
-                        <input type="checkbox"> Monday
-                    </label>
-                    <label>
-                        <input type="checkbox"> Tuesday
-                    </label>
-                    <label>
-                        <input type="checkbox"> Wednesday
-                    </label>
-                    <label>
-                        <input type="checkbox"> Thursday
-                    </label>
-                    <label>
-                        <input type="checkbox"> Friday
-                    </label>
-                    <label>
-                        <input type="checkbox"> Saturday
-                    </label>
-                    <label>
-                        <input type="checkbox"> Sunday
-                    </label>
+                    <label><input type="checkbox"> Monday</label>
+                    <label><input type="checkbox"> Tuesday</label>
+                    <label><input type="checkbox"> Wednesday</label>
+                    <label><input type="checkbox"> Thursday</label>
+                    <label><input type="checkbox"> Friday</label>
+                    <label><input type="checkbox"> Saturday</label>
+                    <label><input type="checkbox"> Sunday</label>
                 </div>
             </div>
+            <!-- Botones para cancelar o guardar los cambios -->
             <div class="row">
                 <div class="six columns">
                     <button class="button" onclick="window.location.href='dashboard.html'">Cancel</button>
@@ -94,5 +87,4 @@
         </div>
     </div>
 </body>
-
 </html>
