@@ -10,7 +10,7 @@
   align-items: center; 
 }
 
-/* Estilos para los enlaces */
+/* Estilos para los links */
 a {
   color: #fff; 
 }
@@ -179,8 +179,9 @@ h2 {
   padding: 0px; 
   text-align: end; 
   margin-top: 100px; 
-  margin-bottom: 100px;
-  margin-right: 590px; 
+  margin-bottom: 150px;
+  margin-right: 400px; 
+  
 }
 
 /* Estilos para dispositivos móviles */
