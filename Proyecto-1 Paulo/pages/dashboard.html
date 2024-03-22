@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-  <link rel="stylesheet" href="styles/dashboardstyle.css" > 
+  <link rel="stylesheet" href="styles/dashboardstyle.css">
 </head>
+
 <body>
   <div class="container">
     <div class="row">
@@ -14,22 +16,22 @@
         <img src="logo.png" alt="Logo">
       </div>
     </div>
+    
     <div class="row">
       <div class="twelve columns">
-
+        
         <div class="navcontainer">
           <div class="tabs">
-            <input type="radio" id="radio-1" name="tabs" checked/>
+            <input type="radio" id="radio-1" name="tabs" checked />
             <label for="radio-1" class="tab" onclick="window.location.href='dashboard.html';">Dashboard</label>
-            <input type="radio" id="radio-2" name="tabs"/>
+            <input type="radio" id="radio-2" name="tabs" />
             <label for="radio-2" class="tab" onclick="window.location.href='TicoRides.html';">Rides</label>
-            <input type="radio" id="radio-3" name="tabs"/>
+            <input type="radio" id="radio-3" name="tabs" />
             <label for="radio-3" class="tab" onclick="window.location.href='settings.html';">Settings</label>
             <span class="slider"></span>
           </div>
         </div>
         
-
       </div>
     </div>
     <div class="row">
@@ -37,6 +39,11 @@
         <h4>Dashboard</h4>
         <div class="breadcrumb">Dashboard &gt;</div>
         <h5>My Rides</h5>
+        <div class="add-ride-container">
+          <button id="searchButton" class="button-primary u-full-width">
+            <a href="addRide.html" id="addRideButton">Add Ride</a>
+          </button>
+        </div>
         <table>
           <thead>
             <tr>
@@ -71,4 +78,5 @@
     </div>
   </div>
 </body>
+
 </html>
